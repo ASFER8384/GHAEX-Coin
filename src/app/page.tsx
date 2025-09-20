@@ -16,9 +16,9 @@ export default function Home() {
     <main>
       <Hero />
       <Work />
-      <TimeLine />
+      {/* <TimeLine /> */}
       <Platform />
-      <Portfolio />
+      {/* <Portfolio /> */}
       <Upgrade />
       <Perks />
     </main>

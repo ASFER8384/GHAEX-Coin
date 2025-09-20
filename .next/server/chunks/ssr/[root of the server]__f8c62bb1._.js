@@ -82,8 +82,8 @@ const headerData = [
         href: "/#main-banner"
     },
     {
-        label: "Development",
-        href: "/#development"
+        label: "About",
+        href: "/#"
     },
     {
         label: "Work",
@@ -91,7 +91,7 @@ const headerData = [
     },
     {
         label: "Portfolio",
-        href: "/#portfolio"
+        href: "/#"
     },
     {
         label: "Upgrade",
@@ -225,10 +225,10 @@ const upgradeData = [
         title: "A Fraction of the Cost"
     },
     {
-        title: "More Durable"
+        title: "More Profit"
     },
     {
-        title: "Easier to Use"
+        title: "Easier to Transfer"
     }
 ];
 const perksData = [

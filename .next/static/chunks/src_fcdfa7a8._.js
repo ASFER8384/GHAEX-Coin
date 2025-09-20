@@ -14,8 +14,8 @@ const headerData = [
         href: "/#main-banner"
     },
     {
-        label: "Development",
-        href: "/#development"
+        label: "About",
+        href: "/#"
     },
     {
         label: "Work",
@@ -23,7 +23,7 @@ const headerData = [
     },
     {
         label: "Portfolio",
-        href: "/#portfolio"
+        href: "/#"
     },
     {
         label: "Upgrade",
