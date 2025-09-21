@@ -2,7 +2,7 @@
   "/favicon.ico/route": "/favicon.ico",
   "/(site)/documentation/page": "/documentation",
   "/_not-found/page": "/_not-found",
-  "/page": "/",
   "/(site)/(auth)/signin/page": "/signin",
+  "/page": "/",
   "/(site)/(auth)/signup/page": "/signup"
 }
