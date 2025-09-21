@@ -102,6 +102,7 @@ body{
 section {
   @apply bg-darkmode;
 }
+npm run dev
 
 .blog-details p,
 .blog-details hr {
