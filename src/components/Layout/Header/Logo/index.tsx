@@ -5,7 +5,7 @@ const Logo: React.FC = () => {
   return (
     <Link href="/">
       <Image
-        src="/images/logo/logo2.png"
+        src="/images/logo/Logo2.png"
         alt="logo"
         width={160}
         height={25}
@@ -17,3 +17,4 @@ const Logo: React.FC = () => {
 };
 
 export default Logo;
+
