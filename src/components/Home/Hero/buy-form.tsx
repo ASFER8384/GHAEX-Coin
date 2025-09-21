@@ -9,7 +9,9 @@ interface Crypto {
 }
 
 const BuyCrypto = () => {
-  const [loading, setLoading] = useState(false)
+  // const [loading, setLoading] = useState(false)
+  // const loader = loading
+  // loader = false
   const [cryptos, setCryptos] = useState<Crypto[]>([])
   const [formData, setFormData] = useState<{
     name: string
@@ -59,7 +61,7 @@ const BuyCrypto = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    setLoading(true)
+    // setLoading(true)
     try {
       await new Promise((resolve) => setTimeout(resolve, 2000))
       toast.success('Crypto purchase successful!')
@@ -68,7 +70,7 @@ const BuyCrypto = () => {
       toast.error('An error occurred during the purchase.')
       console.error(error)
     } finally {
-      setLoading(false)
+      // setLoading(false)
     }
   }
 

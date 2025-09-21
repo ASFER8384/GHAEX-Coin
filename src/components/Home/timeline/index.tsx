@@ -1,18 +1,18 @@
 'use client'
 import Image from 'next/image'
 import { timelineData } from '@/app/api/data'
-import { motion, useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { motion } from 'framer-motion'
+// import { useRef } from 'react'
 
 const TimeLine = () => {
-  const ref = useRef(null)
-  const inView = useInView(ref)
+  // const ref = useRef(null)
+  // const inView = useInView(ref)
 
-  const TopAnimation = {
-    initial: { y: '-100%', opacity: 0 },
-    animate: inView ? { y: 0, opacity: 1 } : { y: '-100%', opacity: 0 },
-    transition: { duration: 0.6, delay: 0.4 },
-  }
+  // const TopAnimation = {
+  //   initial: { y: '-100%', opacity: 0 },
+  //   animate: inView ? { y: 0, opacity: 1 } : { y: '-100%', opacity: 0 },
+  //   transition: { duration: 0.6, delay: 0.4 },
+  // }
   return (
     <section className='md:pt-40 pt-9' id='development'>
       <div className='container lg:px-16 px-4'>

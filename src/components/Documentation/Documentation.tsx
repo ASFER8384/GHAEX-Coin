@@ -1,7 +1,7 @@
 import { Configuration } from './Configuration'
 import { DocNavigation } from './DocNavigation'
 import { Introduction } from './Introduction'
-import { PackageStructure } from './PackageStructure'
+// import { PackageStructure } from './PackageStructure'
 import { QuickStart } from './QuickStart'
 
 export const Documentation = () => {
@@ -14,7 +14,7 @@ export const Documentation = () => {
           </div>
           <div className='lg:col-span-9 col-span-12'>
             <Introduction />
-            <PackageStructure />
+            {/* <PackageStructure /> */}
             <QuickStart />
             <Configuration />
           </div>

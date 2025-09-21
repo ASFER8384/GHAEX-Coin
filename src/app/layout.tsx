@@ -4,7 +4,7 @@ import Header from '@/components/Layout/Header'
 import Footer from '@/components/Layout/Footer'
 import { ThemeProvider } from 'next-themes'
 import ScrollToTop from '@/components/ScrollToTop'
-import Aoscompo from '@/utils/aos'
+// import Aoscompo from '@/utils/aos'
 const font = DM_Sans({ subsets: ['latin'] })
 
 export default function RootLayout({
@@ -19,11 +19,11 @@ export default function RootLayout({
           attribute='class'
           enableSystem={true}
           defaultTheme='system'>
-          <Aoscompo>
+          {/* <Aoscompo> */}
             <Header />
             {children}
             <Footer />
-          </Aoscompo>
+          {/* </Aoscompo> */}
           <ScrollToTop />
         </ThemeProvider>
       </body>

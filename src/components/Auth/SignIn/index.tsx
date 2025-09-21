@@ -1,48 +1,48 @@
 'use client'
-import { signIn } from 'next-auth/react'
+// import { signIn } from 'next-auth/react'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
+// import { useRouter } from 'next/navigation'
 import { useState } from 'react'
-import toast from 'react-hot-toast'
+// import toast from 'react-hot-toast'
 import SocialSignIn from '../SocialSignIn'
 import Logo from '@/components/Layout/Header/Logo'
-import Loader from '@/components/Common/Loader'
+// import Loader from '@/components/Common/Loader'
 
 const Signin = () => {
-  const router = useRouter()
+//   const router = useRouter()
 
   const [loginData, setLoginData] = useState({
     email: '',
     password: '',
     checkboxToggle: false,
   })
-  const [loading, setLoading] = useState(false)
+//   const [loading, setLoading] = useState(false)
 
-  const loginUser = (e: any) => {
-    e.preventDefault()
+//   const loginUser = (e: any) => {
+//     e.preventDefault()
 
-    setLoading(true)
-    signIn('credentials', { ...loginData, redirect: false })
-      .then((callback) => {
-        if (callback?.error) {
-          toast.error(callback?.error)
-          console.log(callback?.error)
-          setLoading(false)
-          return
-        }
+//     setLoading(true)
+//     signIn('credentials', { ...loginData, redirect: false })
+//       .then((callback) => {
+//         if (callback?.error) {
+//           toast.error(callback?.error)
+//           console.log(callback?.error)
+//           setLoading(false)
+//           return
+//         }
 
-        if (callback?.ok && !callback?.error) {
-          toast.success('Login successful')
-          setLoading(false)
-          router.push('/')
-        }
-      })
-      .catch((err) => {
-        setLoading(false)
-        console.log(err.message)
-        toast.error(err.message)
-      })
-  }
+//         if (callback?.ok && !callback?.error) {
+//           toast.success('Login successful')
+//           setLoading(false)
+//           router.push('/')
+//         }
+//       })
+//       .catch((err) => {
+//         setLoading(false)
+//         console.log(err.message)
+//         toast.error(err.message)
+//       })
+//   }
 
   return (
     <>
@@ -81,10 +81,10 @@ const Signin = () => {
         </div>
         <div className='mb-9'>
           <button
-            onClick={loginUser}
+            // onClick={loginUser}
             type='submit'
             className='bg-primary w-full py-3 rounded-lg text-18 font-medium border border-primary hover:text-primary hover:bg-transparent'>
-            Sign In {loading && <Loader />}
+            Sign In 
           </button>
         </div>
       </form>
